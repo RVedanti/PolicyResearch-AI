@@ -1,0 +1,22 @@
+{
+  "Vector Search": {
+    "Recall@5": 0.4530,
+    "Precision@5": 0.4560,
+    "MRR": 0.6883
+  },
+  "BM25": {
+    "Recall@5": 0.1648,
+    "Precision@5": 0.1600,
+    "MRR": 0.2907
+  },
+  "Hybrid": {
+    "Recall@5": 0.4301,
+    "Precision@5": 0.4320,
+    "MRR": 0.7033
+  },
+  "Hybrid + Cross-Encoder": {
+    "Recall@5": 0.3802,
+    "Precision@5": 0.3600,
+    "MRR": 0.7173
+  }
+}

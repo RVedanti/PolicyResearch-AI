@@ -1,0 +1,323 @@
+[
+  {
+    "id": 1,
+    "question": "What is the role of artificial intelligence in India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively addresses the question by detailing various aspects of AI's role in India, including its application in addressing unique challenges, sector-specific uses, and its potential as a global solution hub."
+  },
+  {
+    "id": 2,
+    "question": "How can artificial intelligence improve healthcare in India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the question by providing multiple specific ways AI can improve healthcare in India, including enhanced diagnostics, personalized treatment, cancer screening, pandemic identification, decision support, and leveraging existing technology infrastructure."
+  },
+  {
+    "id": 3,
+    "question": "What challenges affect the adoption of artificial intelligence in India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question by listing and elaborating on several challenges that affect the adoption of artificial intelligence specifically in India."
+  },
+  {
+    "id": 4,
+    "question": "How can AI contribute to agriculture in India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly addresses how AI can contribute to agriculture in India by listing several specific applications such as soil health monitoring, crop health monitoring, yield prediction, and increasing farm mechanization efficiency. It also contextualizes these contributions within the Indian agricultural landscape."
+  },
+  {
+    "id": 5,
+    "question": "What is Artificial Intelligence as a Service?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly defines Artificial Intelligence as a Service (AIaaS) as a model where AI solutions are provided as a service, and elaborates on how AI models can be bought and sold. It then provides further context about the operational model within a marketplace, which helps to fully explain 'what it is'."
+  },
+  {
+    "id": 6,
+    "question": "How can AI help improve access to healthcare?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the question by providing multiple ways AI can improve access to healthcare, such as augmenting scarce personnel, enabling early detection and diagnosis for a larger population, and specific examples like cancer screening and TB diagnostics."
+  },
+  {
+    "id": 7,
+    "question": "What healthcare problems can artificial intelligence help address?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly lists multiple healthcare problems that artificial intelligence can help address, directly answering the user's question."
+  },
+  {
+    "id": 8,
+    "question": "How can AI support diagnosis and treatment?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses both parts of the question, providing specific examples and applications for how AI supports diagnosis and treatment."
+  },
+  {
+    "id": 9,
+    "question": "How can artificial intelligence help overcome geographical barriers to healthcare?",
+    "answer_relevance_score": 4,
+    "reason": "The answer directly addresses how AI can help overcome geographical barriers, explicitly mentioning challenges in rural areas with poor connectivity and limited professionals. It provides relevant examples like AI-driven diagnostics and imaging diagnostics, which clearly help overcome distance. Some other listed applications (personalized treatment, early identification of pandemics, early detection and treatment) are broader benefits of AI in healthcare and their specific link to overcoming *geographical* barriers is not as explicitly detailed, making them minor irrelevant or less focused content rather than fully irrelevant."
+  },
+  {
+    "id": 10,
+    "question": "What role can AI play in improving healthcare delivery in India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question by listing multiple specific roles AI can play in improving healthcare delivery in India, such as addressing access barriers, enhanced diagnostics, personalized treatment, and early pandemic identification."
+  },
+  {
+    "id": 11,
+    "question": "How can AI contribute to agriculture in India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively lists multiple specific ways AI can contribute to agriculture, providing relevant examples and mentioning organizations (Plantix, Microsoft, ICRISAT) that are active in the Indian agricultural sector, thus addressing the 'in India' aspect of the question."
+  },
+  {
+    "id": 12,
+    "question": "How can AI help improve crop productivity?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively addresses the user's question by providing multiple specific mechanisms through which AI can improve crop productivity, such as soil health monitoring, crop health monitoring, increasing farm mechanization efficiency, and optimizing input use."
+  },
+  {
+    "id": 13,
+    "question": "How can AI support farmers in making better decisions?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question by outlining several specific mechanisms through which AI can support farmers in making better decisions across various aspects of agriculture, such as soil health, crop management, resource optimization, and market information."
+  },
+  {
+    "id": 14,
+    "question": "How can AI help detect pests and diseases in agriculture?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the question by providing multiple specific ways AI can help detect pests and diseases in agriculture, such as image recognition, early disease identification through monitoring, and predicting advisories for pest control."
+  },
+  {
+    "id": 15,
+    "question": "How can AI improve agricultural supply chains and markets?",
+    "answer_relevance_score": 4,
+    "reason": "The answer directly addresses how AI can improve agricultural supply chains and markets by focusing on increasing price realization for producers through predictive analytics, big data, and reducing information asymmetry. It provides a clear and relevant mechanism. However, it primarily focuses on this one aspect of improvement (price discovery and producer earnings) rather than a broader range of potential AI applications across the entire supply chain or market (e.g., logistics, crop management, demand forecasting for processing). Thus, it mostly answers the question but is not exhaustive."
+  },
+  {
+    "id": 16,
+    "question": "How can AI improve access to and quality of education?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly addresses both parts of the user's question: how AI can improve the quality of education and how it can improve access to education. It provides multiple mechanisms and examples for each aspect."
+  },
+  {
+    "id": 17,
+    "question": "How can AI provide personalised learning for students?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively lists multiple distinct ways AI can provide personalized learning for students, addressing the 'how' aspect of the question thoroughly."
+  },
+  {
+    "id": 18,
+    "question": "How can AI help reduce student dropouts?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively explains how AI can help reduce student dropouts by detailing the use of predictive tools, the parameters analyzed, the types of interventions enabled by AI's predictions, and provides specific examples."
+  },
+  {
+    "id": 19,
+    "question": "How can AI support teachers in education?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively lists multiple ways AI can support teachers in education, addressing various aspects of a teacher's role and responsibilities."
+  },
+  {
+    "id": 20,
+    "question": "How can AI be used to improve learning outcomes?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively addresses the question by providing multiple specific applications of AI (personalized learning, interactive aids, predictive analysis, personalized feedback) that directly lead to improved learning outcomes."
+  },
+  {
+    "id": 21,
+    "question": "How can AI improve smart cities in India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively addresses how AI can improve smart cities in India by providing specific examples across various domains like public facilities, traffic, service delivery, and safety/security. It clearly outlines the 'how' for each improvement."
+  },
+  {
+    "id": 22,
+    "question": "How can AI help reduce traffic congestion?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question by listing multiple specific ways AI can help reduce traffic congestion, providing clear examples for each."
+  },
+  {
+    "id": 23,
+    "question": "How can AI improve transportation and mobility?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively addresses the question by detailing multiple ways AI can improve transportation and mobility, such as optimizing traffic flow, enhancing public transport, advancing autonomous vehicles, improving infrastructure design, and increasing safety. Each point is further elaborated with specific examples of AI's application."
+  },
+  {
+    "id": 24,
+    "question": "How can AI improve road safety?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question by providing multiple specific ways AI can improve road safety, such as intelligent platooning, ITS, accident prevention, optimized traffic control, and assistive vehicle technology."
+  },
+  {
+    "id": 25,
+    "question": "How can AI support sustainable transportation?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively addresses the user's question by outlining multiple specific ways AI can support sustainable transportation, providing detailed examples for each method."
+  },
+  {
+    "id": 26,
+    "question": "What opportunities does AI create for India's technology industry?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question by listing several specific opportunities AI creates for India's technology industry, such as global leadership in AIaaS, developing scalable solutions, internal process automation, and leveraging existing IT prominence."
+  },
+  {
+    "id": 27,
+    "question": "What is the potential of Indian IT companies in AI?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question about the potential of Indian IT companies in AI. It highlights their strengths and advantages that contribute to their potential, as well as the challenges and areas where this potential is not yet fully realized, which is still relevant to understanding their overall potential."
+  },
+  {
+    "id": 28,
+    "question": "How can India become a leader in artificial intelligence?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and comprehensively addresses the question by providing six distinct strategies and actions India can take to become a leader in artificial intelligence. Each point clearly explains a 'how'."
+  },
+  {
+    "id": 29,
+    "question": "What is the significance of AI as a Service for India?",
+    "answer_relevance_score": 5,
+    "reason": "The answer directly and completely addresses the user's question about the significance of AI as a Service for India, detailing India's potential to become a global model for AIaaS, its competence in IT, and its role as a solution provider for emerging economies."
+  },
+  {
+    "id": 30,
+    "question": "How can India's technology capabilities support AI development?",
+    "similarity": 0.2768,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 31,
+    "question": "How might AI affect employment in India?",
+    "similarity": 0.0852,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 32,
+    "question": "What skills will be important for an AI-driven economy?",
+    "similarity": 0.1727,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 33,
+    "question": "How can India prepare its workforce for artificial intelligence?",
+    "similarity": 0.1237,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 34,
+    "question": "How can AI create new opportunities for workers in India?",
+    "similarity": 0.2136,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 35,
+    "question": "What challenges can AI create for employment?",
+    "similarity": 0.0812,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 36,
+    "question": "What are the major privacy concerns associated with AI?",
+    "similarity": 0.114,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 37,
+    "question": "What are the major ethical challenges associated with AI?",
+    "similarity": 0.156,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 38,
+    "question": "How can bias in AI systems be addressed?",
+    "similarity": 0.2142,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 39,
+    "question": "Why are data privacy and security important for AI?",
+    "similarity": 0.2932,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 40,
+    "question": "What measures can India take to promote responsible AI?",
+    "similarity": 0.1819,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 41,
+    "question": "What are the major challenges facing AI research in India?",
+    "similarity": 0.2435,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 42,
+    "question": "How can India improve AI research and innovation?",
+    "similarity": 0.267,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 43,
+    "question": "What role do universities and research institutions play in AI development?",
+    "similarity": 0.2196,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 44,
+    "question": "How can collaboration support AI research in India?",
+    "similarity": 0.3243,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 4
+  },
+  {
+    "id": 45,
+    "question": "What can India learn from other countries' AI research strategies?",
+    "similarity": 0.2291,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 3
+  },
+  {
+    "id": 46,
+    "question": "What are the major adoption challenges for AI in India?",
+    "similarity": 0.1693,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 47,
+    "question": "What are the barriers to widespread adoption of AI in India?",
+    "similarity": 0.138,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 48,
+    "question": "What policy actions can the Indian government take to promote AI?",
+    "similarity": 0.1248,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 49,
+    "question": "Why does India need a national strategy for artificial intelligence?",
+    "similarity": 0.1114,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  },
+  {
+    "id": 50,
+    "question": "What opportunities does AI provide for India?",
+    "similarity": 0.0945,
+    "reason": "Local TF-IDF cosine similarity was used to estimate how closely the generated answer matches the question.",
+    "answer_relevance_score": 2
+  }
+]

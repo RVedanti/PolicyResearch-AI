@@ -1,0 +1,521 @@
+[
+  {
+    "id": 1,
+    "question": "What is the role of artificial intelligence in India?",
+    "relevant_chunks": [
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How can artificial intelligence improve healthcare in India?",
+    "relevant_chunks": [
+      40,
+      41,
+      42,
+      48,
+      50,
+      52,
+      53,
+      54
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What challenges affect the adoption of artificial intelligence in India?",
+    "relevant_chunks": [
+      96,
+      97,
+      98,
+      99,
+      100,
+      101
+    ]
+  },
+  {
+    "id": 4,
+    "question": "How can AI contribute to agriculture in India?",
+    "relevant_chunks": [
+      55,
+      58,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ]
+  },
+  {
+    "id": 5,
+    "question": "What is Artificial Intelligence as a Service?",
+    "relevant_chunks": [
+      31,
+      32
+    ]
+  },
+  {
+    "id": 6,
+    "question": "How can AI help improve access to healthcare?",
+    "relevant_chunks": [
+      41,
+      48,
+      50,
+      52,
+      54
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What healthcare problems can artificial intelligence help address?",
+    "relevant_chunks": [
+      40,
+      41,
+      42,
+      48,
+      50,
+      52,
+      53
+    ]
+  },
+  {
+    "id": 8,
+    "question": "How can AI support diagnosis and treatment?",
+    "relevant_chunks": [
+      48,
+      50,
+      52,
+      53,
+      54
+    ]
+  },
+  {
+    "id": 9,
+    "question": "How can artificial intelligence help overcome geographical barriers to healthcare?",
+    "relevant_chunks": [
+      41,
+      42,
+      50,
+      52,
+      54
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What role can AI play in improving healthcare delivery in India?",
+    "relevant_chunks": [
+      40,
+      41,
+      48,
+      50,
+      52,
+      54
+    ]
+  },
+  {
+    "id": 11,
+    "question": "How can AI contribute to agriculture in India?",
+    "relevant_chunks": [
+      55,
+      58,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ]
+  },
+  {
+    "id": 12,
+    "question": "How can AI help improve crop productivity?",
+    "relevant_chunks": [
+      58,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ]
+  },
+  {
+    "id": 13,
+    "question": "How can AI support farmers in making better decisions?",
+    "relevant_chunks": [
+      60,
+      61,
+      64,
+      65
+    ]
+  },
+  {
+    "id": 14,
+    "question": "How can AI help detect pests and diseases in agriculture?",
+    "relevant_chunks": [
+      61,
+      62,
+      63,
+      64,
+      65
+    ]
+  },
+  {
+    "id": 15,
+    "question": "How can AI improve agricultural supply chains and markets?",
+    "relevant_chunks": [
+      60,
+      61,
+      64,
+      65
+    ]
+  },
+  {
+    "id": 16,
+    "question": "How can AI improve access to and quality of education?",
+    "relevant_chunks": [
+      66,
+      68,
+      73,
+      74,
+      75,
+      76
+    ]
+  },
+  {
+    "id": 17,
+    "question": "How can AI provide personalised learning for students?",
+    "relevant_chunks": [
+      73,
+      74,
+      75,
+      76
+    ]
+  },
+  {
+    "id": 18,
+    "question": "How can AI help reduce student dropouts?",
+    "relevant_chunks": [
+      75,
+      76,
+      77,
+      78
+    ]
+  },
+  {
+    "id": 19,
+    "question": "How can AI support teachers in education?",
+    "relevant_chunks": [
+      73,
+      75,
+      76,
+      77,
+      79
+    ]
+  },
+  {
+    "id": 20,
+    "question": "How can AI be used to improve learning outcomes?",
+    "relevant_chunks": [
+      73,
+      74,
+      75,
+      76,
+      77
+    ]
+  },
+  {
+    "id": 21,
+    "question": "How can AI improve smart cities in India?",
+    "relevant_chunks": [
+      79,
+      81,
+      82,
+      83,
+      84
+    ]
+  },
+  {
+    "id": 22,
+    "question": "How can AI help reduce traffic congestion?",
+    "relevant_chunks": [
+      89,
+      90,
+      92,
+      93,
+      94
+    ]
+  },
+  {
+    "id": 23,
+    "question": "How can AI improve transportation and mobility?",
+    "relevant_chunks": [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94
+    ]
+  },
+  {
+    "id": 24,
+    "question": "How can AI improve road safety?",
+    "relevant_chunks": [
+      89,
+      91,
+      92,
+      93,
+      94
+    ]
+  },
+  {
+    "id": 25,
+    "question": "How can AI support sustainable transportation?",
+    "relevant_chunks": [
+      88,
+      90,
+      92,
+      93,
+      94
+    ]
+  },
+  {
+    "id": 26,
+    "question": "What opportunities does AI create for India's technology industry?",
+    "relevant_chunks": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ]
+  },
+  {
+    "id": 27,
+    "question": "What is the potential of Indian IT companies in AI?",
+    "relevant_chunks": [
+      31,
+      32,
+      106
+    ]
+  },
+  {
+    "id": 28,
+    "question": "How can India become a leader in artificial intelligence?",
+    "relevant_chunks": [
+      3,
+      4,
+      5,
+      6,
+      26,
+      27,
+      31
+    ]
+  },
+  {
+    "id": 29,
+    "question": "What is the significance of AI as a Service for India?",
+    "relevant_chunks": [
+      31,
+      32
+    ]
+  },
+  {
+    "id": 30,
+    "question": "How can India's technology capabilities support AI development?",
+    "relevant_chunks": [
+      31,
+      32,
+      103,
+      106,
+      107
+    ]
+  },
+  {
+    "id": 31,
+    "question": "How might AI affect employment in India?",
+    "relevant_chunks": [
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149
+    ]
+  },
+  {
+    "id": 32,
+    "question": "What skills will be important for an AI-driven economy?",
+    "relevant_chunks": [
+      142,
+      143,
+      146,
+      147,
+      149,
+      154,
+      155
+    ]
+  },
+  {
+    "id": 33,
+    "question": "How can India prepare its workforce for artificial intelligence?",
+    "relevant_chunks": [
+      142,
+      146,
+      147,
+      154,
+      155,
+      156
+    ]
+  },
+  {
+    "id": 34,
+    "question": "How can AI create new opportunities for workers in India?",
+    "relevant_chunks": [
+      147,
+      148,
+      152,
+      153,
+      154
+    ]
+  },
+  {
+    "id": 35,
+    "question": "What challenges can AI create for employment?",
+    "relevant_chunks": [
+      142,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151
+    ]
+  },
+  {
+    "id": 36,
+    "question": "What are the major privacy concerns associated with AI?",
+    "relevant_chunks": [
+      193,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203
+    ]
+  },
+  {
+    "id": 37,
+    "question": "What are the major ethical challenges associated with AI?",
+    "relevant_chunks": [
+      193,
+      194,
+      195,
+      196,
+      198,
+      199,
+      200,
+      205
+    ]
+  },
+  {
+    "id": 38,
+    "question": "How can bias in AI systems be addressed?",
+    "relevant_chunks": [
+      194,
+      195,
+      199,
+      200
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Why are data privacy and security important for AI?",
+    "relevant_chunks": [
+      193,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203
+    ]
+  },
+  {
+    "id": 40,
+    "question": "What measures can India take to promote responsible AI?",
+    "relevant_chunks": [
+      193,
+      194,
+      195,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      205
+    ]
+  },
+  {
+  "id": 41,
+  "question": "What are the major challenges facing AI research in India?",
+  "relevant_chunks": [99, 103, 104, 105, 106]
+},
+{
+  "id": 42,
+  "question": "How can India improve AI research and innovation?",
+  "relevant_chunks": [102, 111, 116, 117, 167, 168, 169]
+},
+{
+  "id": 43,
+  "question": "What role do universities and research institutions play in AI development?",
+  "relevant_chunks": [103, 104, 105, 111, 116, 118]
+},
+{
+  "id": 44,
+  "question": "How can collaboration support AI research in India?",
+  "relevant_chunks": [25, 111, 112, 117, 167, 168, 169]
+},
+{
+  "id": 45,
+  "question": "What can India learn from other countries' AI research strategies?",
+  "relevant_chunks": [24, 25, 26, 106, 107, 108, 110]
+},
+{
+  "id": 46,
+  "question": "What are the major adoption challenges for AI in India?",
+  "relevant_chunks": [101]
+},
+{
+  "id": 47,
+  "question": "What are the barriers to widespread adoption of AI in India?",
+  "relevant_chunks": [101]
+},
+{
+  "id": 48,
+  "question": "What policy actions can the Indian government take to promote AI?",
+  "relevant_chunks": [206, 207, 208, 209, 211, 212]
+},
+{
+  "id": 49,
+  "question": "Why does India need a national strategy for artificial intelligence?",
+  "relevant_chunks": [2, 3, 4, 5, 6]
+},
+{
+  "id": 50,
+  "question": "What opportunities does AI provide for India?",
+  "relevant_chunks": [27, 28, 29, 30]
+}
+]

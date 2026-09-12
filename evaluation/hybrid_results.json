@@ -1,0 +1,1092 @@
+{
+  "method": "Hybrid",
+  "document_id": "6a9bbad0d9e733633c002d03",
+  "top_k": 5,
+  "candidate_k": 20,
+  "vector_weight": 0.7,
+  "bm25_weight": 0.3,
+  "questions_count": 50,
+  "Recall@5": 0.4301,
+  "Precision@5": 0.432,
+  "MRR": 0.7033,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the role of artificial intelligence in India?",
+      "retrieved_chunks": [
+        31,
+        29,
+        36,
+        30,
+        95
+      ],
+      "relevant_chunks": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "recall_at_5": 0.6,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 2,
+      "question": "How can artificial intelligence improve healthcare in India?",
+      "retrieved_chunks": [
+        48,
+        31,
+        30,
+        49,
+        50
+      ],
+      "relevant_chunks": [
+        40,
+        41,
+        42,
+        48,
+        50,
+        52,
+        53,
+        54
+      ],
+      "recall_at_5": 0.25,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 3,
+      "question": "What challenges affect the adoption of artificial intelligence in India?",
+      "retrieved_chunks": [
+        95,
+        160,
+        101,
+        96,
+        161
+      ],
+      "relevant_chunks": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "precision_at_5": 0.4,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "id": 4,
+      "question": "How can AI contribute to agriculture in India?",
+      "retrieved_chunks": [
+        62,
+        61,
+        58,
+        4,
+        63
+      ],
+      "relevant_chunks": [
+        55,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.8,
+      "mrr": 1.0
+    },
+    {
+      "id": 5,
+      "question": "What is Artificial Intelligence as a Service?",
+      "retrieved_chunks": [
+        31,
+        16,
+        39,
+        186,
+        185
+      ],
+      "relevant_chunks": [
+        31,
+        32
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "id": 6,
+      "question": "How can AI help improve access to healthcare?",
+      "retrieved_chunks": [
+        49,
+        50,
+        48,
+        30,
+        7
+      ],
+      "relevant_chunks": [
+        41,
+        48,
+        50,
+        52,
+        54
+      ],
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.4,
+      "mrr": 0.5
+    },
+    {
+      "id": 7,
+      "question": "What healthcare problems can artificial intelligence help address?",
+      "retrieved_chunks": [
+        50,
+        49,
+        31,
+        32,
+        33
+      ],
+      "relevant_chunks": [
+        40,
+        41,
+        42,
+        48,
+        50,
+        52,
+        53
+      ],
+      "recall_at_5": 0.14285714285714285,
+      "precision_at_5": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "id": 8,
+      "question": "How can AI support diagnosis and treatment?",
+      "retrieved_chunks": [
+        51,
+        254,
+        253,
+        52,
+        32
+      ],
+      "relevant_chunks": [
+        48,
+        50,
+        52,
+        53,
+        54
+      ],
+      "recall_at_5": 0.2,
+      "precision_at_5": 0.2,
+      "mrr": 0.25
+    },
+    {
+      "id": 9,
+      "question": "How can artificial intelligence help overcome geographical barriers to healthcare?",
+      "retrieved_chunks": [
+        50,
+        31,
+        49,
+        30,
+        32
+      ],
+      "relevant_chunks": [
+        41,
+        42,
+        50,
+        52,
+        54
+      ],
+      "recall_at_5": 0.2,
+      "precision_at_5": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "id": 10,
+      "question": "What role can AI play in improving healthcare delivery in India?",
+      "retrieved_chunks": [
+        48,
+        49,
+        50,
+        30,
+        29
+      ],
+      "relevant_chunks": [
+        40,
+        41,
+        48,
+        50,
+        52,
+        54
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 11,
+      "question": "How can AI contribute to agriculture in India?",
+      "retrieved_chunks": [
+        62,
+        61,
+        58,
+        4,
+        63
+      ],
+      "relevant_chunks": [
+        55,
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.8,
+      "mrr": 1.0
+    },
+    {
+      "id": 12,
+      "question": "How can AI help improve crop productivity?",
+      "retrieved_chunks": [
+        62,
+        61,
+        63,
+        65,
+        58
+      ],
+      "relevant_chunks": [
+        58,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "recall_at_5": 0.7142857142857143,
+      "precision_at_5": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "id": 13,
+      "question": "How can AI support farmers in making better decisions?",
+      "retrieved_chunks": [
+        63,
+        62,
+        61,
+        64,
+        58
+      ],
+      "relevant_chunks": [
+        60,
+        61,
+        64,
+        65
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.4,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "id": 14,
+      "question": "How can AI help detect pests and diseases in agriculture?",
+      "retrieved_chunks": [
+        61,
+        62,
+        63,
+        58,
+        213
+      ],
+      "relevant_chunks": [
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "recall_at_5": 0.6,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 15,
+      "question": "How can AI improve agricultural supply chains and markets?",
+      "retrieved_chunks": [
+        58,
+        65,
+        64,
+        61,
+        63
+      ],
+      "relevant_chunks": [
+        60,
+        61,
+        64,
+        65
+      ],
+      "recall_at_5": 0.75,
+      "precision_at_5": 0.6,
+      "mrr": 0.5
+    },
+    {
+      "id": 16,
+      "question": "How can AI improve access to and quality of education?",
+      "retrieved_chunks": [
+        34,
+        75,
+        74,
+        76,
+        209
+      ],
+      "relevant_chunks": [
+        66,
+        68,
+        73,
+        74,
+        75,
+        76
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.6,
+      "mrr": 0.5
+    },
+    {
+      "id": 17,
+      "question": "How can AI provide personalised learning for students?",
+      "retrieved_chunks": [
+        74,
+        73,
+        77,
+        75,
+        34
+      ],
+      "relevant_chunks": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "recall_at_5": 0.75,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 18,
+      "question": "How can AI help reduce student dropouts?",
+      "retrieved_chunks": [
+        75,
+        76,
+        74,
+        73,
+        34
+      ],
+      "relevant_chunks": [
+        75,
+        76,
+        77,
+        78
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 19,
+      "question": "How can AI support teachers in education?",
+      "retrieved_chunks": [
+        73,
+        77,
+        74,
+        75,
+        224
+      ],
+      "relevant_chunks": [
+        73,
+        75,
+        76,
+        77,
+        79
+      ],
+      "recall_at_5": 0.6,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 20,
+      "question": "How can AI be used to improve learning outcomes?",
+      "retrieved_chunks": [
+        75,
+        73,
+        74,
+        76,
+        77
+      ],
+      "relevant_chunks": [
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "id": 21,
+      "question": "How can AI improve smart cities in India?",
+      "retrieved_chunks": [
+        82,
+        93,
+        34,
+        89,
+        83
+      ],
+      "relevant_chunks": [
+        79,
+        81,
+        82,
+        83,
+        84
+      ],
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 22,
+      "question": "How can AI help reduce traffic congestion?",
+      "retrieved_chunks": [
+        92,
+        91,
+        90,
+        93,
+        94
+      ],
+      "relevant_chunks": [
+        89,
+        90,
+        92,
+        93,
+        94
+      ],
+      "recall_at_5": 0.8,
+      "precision_at_5": 0.8,
+      "mrr": 1.0
+    },
+    {
+      "id": 23,
+      "question": "How can AI improve transportation and mobility?",
+      "retrieved_chunks": [
+        90,
+        91,
+        92,
+        85,
+        89
+      ],
+      "relevant_chunks": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "recall_at_5": 0.5714285714285714,
+      "precision_at_5": 0.8,
+      "mrr": 1.0
+    },
+    {
+      "id": 24,
+      "question": "How can AI improve road safety?",
+      "retrieved_chunks": [
+        91,
+        92,
+        89,
+        90,
+        85
+      ],
+      "relevant_chunks": [
+        89,
+        91,
+        92,
+        93,
+        94
+      ],
+      "recall_at_5": 0.6,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 25,
+      "question": "How can AI support sustainable transportation?",
+      "retrieved_chunks": [
+        89,
+        92,
+        91,
+        85,
+        90
+      ],
+      "relevant_chunks": [
+        88,
+        90,
+        92,
+        93,
+        94
+      ],
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.4,
+      "mrr": 0.5
+    },
+    {
+      "id": 26,
+      "question": "What opportunities does AI create for India's technology industry?",
+      "retrieved_chunks": [
+        29,
+        31,
+        158,
+        30,
+        159
+      ],
+      "relevant_chunks": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 27,
+      "question": "What is the potential of Indian IT companies in AI?",
+      "retrieved_chunks": [
+        31,
+        106,
+        159,
+        30,
+        158
+      ],
+      "relevant_chunks": [
+        31,
+        32,
+        106
+      ],
+      "recall_at_5": 0.6666666666666666,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 28,
+      "question": "How can India become a leader in artificial intelligence?",
+      "retrieved_chunks": [
+        30,
+        99,
+        130,
+        139,
+        98
+      ],
+      "relevant_chunks": [
+        3,
+        4,
+        5,
+        6,
+        26,
+        27,
+        31
+      ],
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0
+    },
+    {
+      "id": 29,
+      "question": "What is the significance of AI as a Service for India?",
+      "retrieved_chunks": [
+        31,
+        30,
+        29,
+        42,
+        27
+      ],
+      "relevant_chunks": [
+        31,
+        32
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "id": 30,
+      "question": "How can India's technology capabilities support AI development?",
+      "retrieved_chunks": [
+        30,
+        4,
+        29,
+        95,
+        130
+      ],
+      "relevant_chunks": [
+        31,
+        32,
+        103,
+        106,
+        107
+      ],
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0
+    },
+    {
+      "id": 31,
+      "question": "How might AI affect employment in India?",
+      "retrieved_chunks": [
+        145,
+        142,
+        146,
+        143,
+        144
+      ],
+      "relevant_chunks": [
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149
+      ],
+      "recall_at_5": 0.625,
+      "precision_at_5": 1.0,
+      "mrr": 1.0
+    },
+    {
+      "id": 32,
+      "question": "What skills will be important for an AI-driven economy?",
+      "retrieved_chunks": [
+        142,
+        153,
+        10,
+        100,
+        147
+      ],
+      "relevant_chunks": [
+        142,
+        143,
+        146,
+        147,
+        149,
+        154,
+        155
+      ],
+      "recall_at_5": 0.2857142857142857,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 33,
+      "question": "How can India prepare its workforce for artificial intelligence?",
+      "retrieved_chunks": [
+        100,
+        142,
+        99,
+        153,
+        156
+      ],
+      "relevant_chunks": [
+        142,
+        146,
+        147,
+        154,
+        155,
+        156
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "precision_at_5": 0.4,
+      "mrr": 0.5
+    },
+    {
+      "id": 34,
+      "question": "How can AI create new opportunities for workers in India?",
+      "retrieved_chunks": [
+        142,
+        29,
+        100,
+        27,
+        144
+      ],
+      "relevant_chunks": [
+        147,
+        148,
+        152,
+        153,
+        154
+      ],
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0
+    },
+    {
+      "id": 35,
+      "question": "What challenges can AI create for employment?",
+      "retrieved_chunks": [
+        142,
+        144,
+        145,
+        146,
+        153
+      ],
+      "relevant_chunks": [
+        142,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "recall_at_5": 0.375,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 36,
+      "question": "What are the major privacy concerns associated with AI?",
+      "retrieved_chunks": [
+        198,
+        193,
+        199,
+        179,
+        194
+      ],
+      "relevant_chunks": [
+        193,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203
+      ],
+      "recall_at_5": 0.42857142857142855,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    },
+    {
+      "id": 37,
+      "question": "What are the major ethical challenges associated with AI?",
+      "retrieved_chunks": [
+        193,
+        11,
+        195,
+        12,
+        101
+      ],
+      "relevant_chunks": [
+        193,
+        194,
+        195,
+        196,
+        198,
+        199,
+        200,
+        205
+      ],
+      "recall_at_5": 0.25,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 38,
+      "question": "How can bias in AI systems be addressed?",
+      "retrieved_chunks": [
+        194,
+        195,
+        193,
+        11,
+        204
+      ],
+      "relevant_chunks": [
+        194,
+        195,
+        199,
+        200
+      ],
+      "recall_at_5": 0.5,
+      "precision_at_5": 0.4,
+      "mrr": 1.0
+    },
+    {
+      "id": 39,
+      "question": "Why are data privacy and security important for AI?",
+      "retrieved_chunks": [
+        11,
+        193,
+        12,
+        96,
+        203
+      ],
+      "relevant_chunks": [
+        193,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203
+      ],
+      "recall_at_5": 0.2857142857142857,
+      "precision_at_5": 0.4,
+      "mrr": 0.5
+    },
+    {
+      "id": 40,
+      "question": "What measures can India take to promote responsible AI?",
+      "retrieved_chunks": [
+        98,
+        160,
+        101,
+        205,
+        201
+      ],
+      "relevant_chunks": [
+        193,
+        194,
+        195,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        205
+      ],
+      "recall_at_5": 0.2,
+      "precision_at_5": 0.4,
+      "mrr": 0.25
+    },
+    {
+      "id": 41,
+      "question": "What are the major challenges facing AI research in India?",
+      "retrieved_chunks": [
+        102,
+        96,
+        98,
+        114,
+        161
+      ],
+      "relevant_chunks": [
+        99,
+        103,
+        104,
+        105,
+        106
+      ],
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0
+    },
+    {
+      "id": 42,
+      "question": "How can India improve AI research and innovation?",
+      "retrieved_chunks": [
+        114,
+        99,
+        170,
+        103,
+        98
+      ],
+      "relevant_chunks": [
+        102,
+        111,
+        116,
+        117,
+        167,
+        168,
+        169
+      ],
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0
+    },
+    {
+      "id": 43,
+      "question": "What role do universities and research institutions play in AI development?",
+      "retrieved_chunks": [
+        23,
+        225,
+        226,
+        110,
+        251
+      ],
+      "relevant_chunks": [
+        103,
+        104,
+        105,
+        111,
+        116,
+        118
+      ],
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0
+    },
+    {
+      "id": 44,
+      "question": "How can collaboration support AI research in India?",
+      "retrieved_chunks": [
+        170,
+        169,
+        211,
+        9,
+        114
+      ],
+      "relevant_chunks": [
+        25,
+        111,
+        112,
+        117,
+        167,
+        168,
+        169
+      ],
+      "recall_at_5": 0.14285714285714285,
+      "precision_at_5": 0.2,
+      "mrr": 0.5
+    },
+    {
+      "id": 45,
+      "question": "What can India learn from other countries' AI research strategies?",
+      "retrieved_chunks": [
+        114,
+        240,
+        106,
+        23,
+        110
+      ],
+      "relevant_chunks": [
+        24,
+        25,
+        26,
+        106,
+        107,
+        108,
+        110
+      ],
+      "recall_at_5": 0.2857142857142857,
+      "precision_at_5": 0.4,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "id": 46,
+      "question": "What are the major adoption challenges for AI in India?",
+      "retrieved_chunks": [
+        101,
+        95,
+        160,
+        96,
+        161
+      ],
+      "relevant_chunks": [
+        101
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "mrr": 1.0
+    },
+    {
+      "id": 47,
+      "question": "What are the barriers to widespread adoption of AI in India?",
+      "retrieved_chunks": [
+        96,
+        95,
+        101,
+        161,
+        160
+      ],
+      "relevant_chunks": [
+        101
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "id": 48,
+      "question": "What policy actions can the Indian government take to promote AI?",
+      "retrieved_chunks": [
+        160,
+        159,
+        206,
+        168,
+        209
+      ],
+      "relevant_chunks": [
+        206,
+        207,
+        208,
+        209,
+        211,
+        212
+      ],
+      "recall_at_5": 0.3333333333333333,
+      "precision_at_5": 0.4,
+      "mrr": 0.3333333333333333
+    },
+    {
+      "id": 49,
+      "question": "Why does India need a national strategy for artificial intelligence?",
+      "retrieved_chunks": [
+        26,
+        2,
+        13,
+        5,
+        7
+      ],
+      "relevant_chunks": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.4,
+      "mrr": 0.5
+    },
+    {
+      "id": 50,
+      "question": "What opportunities does AI provide for India?",
+      "retrieved_chunks": [
+        29,
+        31,
+        30,
+        27,
+        42
+      ],
+      "relevant_chunks": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "recall_at_5": 0.75,
+      "precision_at_5": 0.6,
+      "mrr": 1.0
+    }
+  ]
+}

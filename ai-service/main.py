@@ -477,8 +477,69 @@ def index_document(request: dict):
 
     except Exception as e:
 
+
         print(
             "Document indexing error:",
+            str(e)
+        )
+
+        return {
+            "success": False,
+            "message": str(e),
+        }
+# -------------------------
+# Delete Document from Qdrant
+# -------------------------
+
+@app.delete("/delete-document/{document_id}")
+def delete_document(document_id: str):
+
+    if not document_id:
+        return {
+            "success": False,
+            "message": "Document ID is required",
+        }
+
+    try:
+
+        qdrant = QdrantClient(
+            url=os.getenv("QDRANT_URL"),
+            api_key=os.getenv("QDRANT_API_KEY"),
+            timeout=120,
+        )
+
+        # Delete all vectors belonging to this document
+        qdrant.delete(
+            collection_name="policy_documents",
+            points_selector={
+                "filter": {
+                    "must": [
+                        {
+                            "key": "document_id",
+                            "match": {
+                                "value": document_id
+                            }
+                        }
+                    ]
+                }
+            },
+        )
+
+        print(
+            f"Deleted Qdrant vectors for document: "
+            f"{document_id}"
+        )
+
+        return {
+            "success": True,
+            "document_id": document_id,
+            "message": "Document vectors deleted successfully",
+        }
+
+    except Exception as e:
+
+        print(
+            "Delete document indexing error:",
             str(e)
         )
 

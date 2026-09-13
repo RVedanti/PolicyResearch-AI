@@ -5,6 +5,7 @@ const {
   getProjectDocuments,
   getDocumentChunks,
   resumeDocumentIndexing,
+  deleteDocument,
 } = require("../controllers/documentController");
 
 const protect = require("../middleware/authMiddleware");
@@ -47,7 +48,11 @@ router.post(
   resumeDocumentIndexing
 );
 
-
+router.delete(
+  "/:documentId",
+  protect,
+  deleteDocument
+);
 // =========================
 // Get chunks of a document
 // =========================

@@ -269,11 +269,11 @@ const getProjectDocuments = async (req, res) => {
     });
   }
 };
-
 const deleteDocument = async (req, res) => {
   try {
     const { documentId } = req.params;
 
+    // Find document owned by current user
     const document = await Document.findOne({
       _id: documentId,
       uploadedBy: req.user.userId,
@@ -286,11 +286,57 @@ const deleteDocument = async (req, res) => {
       });
     }
 
+    // Verify project ownership
+    const project = await Project.findOne({
+      _id: document.project,
+      owner: req.user.userId,
+    });
+
+    if (!project) {
+      return res.status(404).json({
+        success: false,
+        message: "Project not found",
+      });
+    }
+
+    console.log(
+      `Deleting document ${documentId}`
+    );
+
+    // Delete vectors from AI service / Qdrant
+    try {
+      const aiResponse = await axios.delete(
+        `${AI_SERVICE_URL}/delete-document/${documentId}`,
+        {
+          timeout: 120000,
+        }
+      );
+
+      console.log(
+        "AI service delete response:",
+        aiResponse.data
+      );
+
+    } catch (aiError) {
+      console.error(
+        "AI service delete error:",
+        aiError.response?.data ||
+          aiError.message
+      );
+
+      return res.status(500).json({
+        success: false,
+        message:
+          "Failed to remove document vectors",
+      });
+    }
+
+    // Delete document from MongoDB
     await Document.deleteOne({
       _id: documentId,
     });
 
-    res.json({
+    return res.json({
       success: true,
       message: "Document deleted successfully",
     });
@@ -301,7 +347,7 @@ const deleteDocument = async (req, res) => {
       error.message
     );
 
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: "Failed to delete document",
     });
@@ -422,4 +468,5 @@ module.exports = {
   getProjectDocuments,
   getDocumentChunks,
   resumeDocumentIndexing,
+  deleteDocument,
 };

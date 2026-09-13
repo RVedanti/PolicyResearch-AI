@@ -600,7 +600,86 @@ const handleCreateProject = async () => {
     activePage,
     selectedProject,
   ]);
+// =========================
+// Delete Document
+// =========================
 
+const deleteDocument = async (documentId) => {
+  const confirmed = window.confirm(
+    "Are you sure you want to delete this document?"
+  );
+
+  if (!confirmed) {
+    return;
+  }
+
+  try {
+    const token =
+      localStorage.getItem("token");
+
+    if (!token) {
+      setUploadError("Please login first.");
+      return;
+    }
+
+    const response = await fetch(
+      `${API_URL}/documents/${documentId}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok || !data.success) {
+      throw new Error(
+        data.message ||
+          "Failed to delete document"
+      );
+    }
+
+    // Remove document from current list
+    setDocuments((previousDocuments) =>
+      previousDocuments.filter(
+        (document) =>
+          document.id !== documentId
+      )
+    );
+
+    // Clear selected document if it was deleted
+    if (selectedDocument === documentId) {
+      setSelectedDocument("");
+    }
+
+    // Close chunk viewer if open
+    setShowChunks(false);
+    setSelectedChunks([]);
+    setChunksDocumentName("");
+
+    setUploadMessage(
+      "Document deleted successfully."
+    );
+
+    setUploadError("");
+
+    // Refresh dashboard statistics
+    await loadDashboardStats();
+
+  } catch (error) {
+    console.error(
+      "Delete document error:",
+      error
+    );
+
+    setUploadError(
+      error.message ||
+        "Failed to delete document"
+    );
+  }
+};
   // =========================
   // View Document Chunks
   // =========================
@@ -1721,16 +1800,31 @@ const handleCreateProject = async () => {
 
                         </div>
 
-                        <button
-                          className="view-chunks-button"
-                          onClick={() =>
-                            viewDocumentChunks(
-                              document.id
-                            )
-                          }
-                        >
-                          View Chunks
-                        </button>
+                        <div className="document-actions">
+
+  <button
+    className="view-chunks-button"
+    onClick={() =>
+      viewDocumentChunks(
+        document.id
+      )
+    }
+  >
+    View Chunks
+  </button>
+
+  <button
+    className="delete-document-button"
+    onClick={() =>
+      deleteDocument(
+        document.id
+      )
+    }
+  >
+    Delete
+  </button>
+
+</div>
 
                       </div>
 

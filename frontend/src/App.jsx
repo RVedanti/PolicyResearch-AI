@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Login from "./Login";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://policyresearch-ai-1.onrender.com/api";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(

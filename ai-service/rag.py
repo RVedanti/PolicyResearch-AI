@@ -11,7 +11,10 @@ from rank_bm25 import BM25Okapi
 load_dotenv()
 
 COLLECTION_NAME = "policy_documents"
-BACKEND_URL = "http://localhost:5000"
+BACKEND_URL = os.getenv(
+    "BACKEND_URL",
+    "http://localhost:5000"
+)
 
 TOP_K = 5
 CANDIDATE_K = 20

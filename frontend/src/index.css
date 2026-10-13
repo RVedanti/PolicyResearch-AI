@@ -1,11 +1,11 @@
-* {
+@import "tailwindcss";
+
+/* Tailwind's dark: variant follows the system setting, same as App.css. */
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fb;
-  color: #1f2937;
 }

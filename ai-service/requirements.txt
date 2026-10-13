@@ -5,6 +5,5 @@ requests
 qdrant-client
 google-genai
 rank-bm25
-sentence-transformers
 pydantic
 numpy

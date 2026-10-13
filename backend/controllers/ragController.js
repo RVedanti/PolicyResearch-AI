@@ -173,9 +173,11 @@ const askQuestion = async (req, res) => {
       error.message
     );
 
-    return res.status(500).json({
+    return res.status(502).json({
       success: false,
-      message: "Failed to generate answer",
+      message:
+        error.message ||
+        "Failed to generate answer",
     });
   }
 };

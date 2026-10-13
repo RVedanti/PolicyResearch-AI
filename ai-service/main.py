@@ -55,6 +55,22 @@ client = genai.Client(
 # RAG
 # -------------------------
 
+def is_connection_error(error):
+    text = f"{type(error).__name__} {error}".lower()
+    return any(
+        marker in text
+        for marker in (
+            "connection reset",
+            "connectionerror",
+            "connection aborted",
+            "remotedisconnected",
+            "remoteprotocolerror",
+            "connecterror",
+            "errno 104",
+        )
+    )
+
+
 @app.post("/rag")
 def rag_answer(request: RAGRequest):
 
@@ -71,15 +87,26 @@ def rag_answer(request: RAGRequest):
 
         rag.AUTH_TOKEN = request.jwt_token
 
-        results = retrieve_documents(
-    request.question,
-    request.document_id
-)
+        # Connections to Qdrant, Gemini or the backend are sometimes dropped
+        # right after a free-tier service wakes up ("Connection reset by
+        # peer"). Retry a couple of times before giving up.
+        for attempt in range(3):
+            try:
+                results = retrieve_documents(
+                    request.question,
+                    request.document_id
+                )
 
-        answer = generate_answer(
-            request.question,
-            results
-        )
+                answer = generate_answer(
+                    request.question,
+                    results
+                )
+                break
+            except Exception as error:
+                if attempt == 2 or not is_connection_error(error):
+                    raise
+                print(f"Connection error, retrying ({attempt + 1}/2): {error}")
+                time.sleep(2 * (attempt + 1))
 
         sources = [
             {
@@ -121,39 +148,6 @@ def health_check():
         "success": True,
         "message": "AI service is running",
     }
-
-
-# -------------------------
-# Test Embedding
-# -------------------------
-
-@app.get("/test-embedding")
-def test_embedding():
-
-    try:
-
-        response = client.models.embed_content(
-            model="gemini-embedding-001",
-            contents=(
-                "Artificial intelligence "
-                "is transforming education."
-            ),
-        )
-
-        embedding = response.embeddings[0].values
-
-        return {
-            "success": True,
-            "dimensions": len(embedding),
-            "embedding": embedding,
-        }
-
-    except Exception as e:
-
-        return {
-            "success": False,
-            "message": str(e),
-        }
 
 
 # -------------------------

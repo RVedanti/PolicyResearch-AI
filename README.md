@@ -7,6 +7,12 @@ PolicyResearch AI is a retrieval-augmented generation (RAG) research assistant. 
 🔗 **Live demo:** https://policyresearch-ai-2.onrender.com
 > Runs on free hosting that sleeps when idle. The first sign-in or answer can take about a minute while the servers wake up; after that it's fast.
 
+![Asking a question: the answer cites its sources, shown on the right](docs/screenshots/ask.png)
+
+| Documents | Sign in |
+|---|---|
+| ![Documents page](docs/screenshots/documents.png) | ![Login page](docs/screenshots/login.png) |
+
 ---
 
 ## Features

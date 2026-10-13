@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import "./App.css";
-import { api, uniqueBy } from "./api";
+import { api, uniqueBy, wakeServers } from "./api";
 import CreateProjectModal from "./components/CreateProjectModal";
 import Icon from "./components/Icon";
 import Sidebar from "./components/Sidebar";
@@ -38,6 +38,11 @@ export default function App() {
 
   // The question/answer shown on the Ask page. History and Saved can open one here.
   const [conversation, setConversation] = useState(null);
+
+  // Start waking the free-tier servers as soon as the page opens.
+  useEffect(() => {
+    wakeServers();
+  }, []);
 
   const loadStats = useCallback(async () => {
     try {

@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 require("dotenv").config();
 
 const connectDB = require("./config/db");
@@ -32,6 +33,26 @@ app.use(express.json());
 // =========================
 // Health Check
 // =========================
+
+// Called once a day by .github/workflows/keepalive.yml.
+// A real query keeps the free MongoDB Atlas cluster from being paused
+// after 30 days without connections.
+app.get("/api/keepalive", async (req, res) => {
+  try {
+    await mongoose.connection.db.admin().ping();
+    const users = await mongoose.connection.db
+      .collection("users")
+      .estimatedDocumentCount();
+
+    res.json({ success: true, mongodb: "ok", users });
+  } catch (error) {
+    res.status(503).json({
+      success: false,
+      mongodb: "error",
+      message: error.message,
+    });
+  }
+});
 
 app.get("/api/health", (req, res) => {
   res.json({

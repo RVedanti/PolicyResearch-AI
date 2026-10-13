@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { api } from "../api";
 
 export default function LoginPage({ onLogin }) {
@@ -6,6 +6,17 @@ export default function LoginPage({ onLogin }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [slow, setSlow] = useState(false);
+
+  // If signing in takes a while, the free server is probably waking up.
+  useEffect(() => {
+    if (!loading) return undefined;
+    const timer = setTimeout(() => setSlow(true), 5000);
+    return () => {
+      clearTimeout(timer);
+      setSlow(false);
+    };
+  }, [loading]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -73,9 +84,21 @@ export default function LoginPage({ onLogin }) {
           )}
 
           <button type="submit" className="button button-primary button-block" disabled={loading}>
-            {loading ? "Signing in…" : "Sign in"}
+            {loading ? (slow ? "Waking up the server…" : "Signing in…") : "Sign in"}
           </button>
+
+          {slow && (
+            <p className="login-wait" role="status">
+              The server was asleep. This first sign-in can take up to a minute.
+            </p>
+          )}
         </form>
+
+        <p className="login-note">
+          <strong>Note:</strong> this demo runs on free hosting that sleeps when nobody is
+          using it. The first sign-in and first answer may take up to a minute; after that
+          it’s fast.
+        </p>
 
       </div>
 

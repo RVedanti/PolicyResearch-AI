@@ -5,6 +5,7 @@ import uuid
 
 from dotenv import load_dotenv
 from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 from google import genai
 from pydantic import BaseModel
 
@@ -141,13 +142,48 @@ def rag_answer(request: RAGRequest):
 # Health Check
 # -------------------------
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health_check():
 
     return {
         "success": True,
         "message": "AI service is running",
     }
+
+
+# -------------------------
+# Keep-alive
+# -------------------------
+# Called once a day by .github/workflows/keepalive.yml.
+# A real read from Qdrant counts as activity, so the free Qdrant Cloud
+# cluster is not suspended (after 1 week idle) or deleted (after 4 weeks).
+
+@app.api_route("/keepalive", methods=["GET", "HEAD"])
+def keepalive():
+    import rag
+
+    try:
+        result = rag.qdrant.count(
+            collection_name=rag.COLLECTION_NAME,
+            exact=False,
+        )
+
+        return {
+            "success": True,
+            "qdrant": "ok",
+            "points": result.count,
+        }
+
+    except Exception as e:
+
+        return JSONResponse(
+            status_code=503,
+            content={
+                "success": False,
+                "qdrant": "error",
+                "message": str(e),
+            },
+        )
 
 
 # -------------------------

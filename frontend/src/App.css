@@ -1949,6 +1949,26 @@ button.cite:focus-visible {
   color: var(--muted);
 }
 
+.login-wait {
+  font-size: 14px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.login-note {
+  padding: 12px 14px;
+  border-left: 2px solid var(--accent);
+  background: var(--paper-2);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.login-note strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .login-panel .button-block {
   margin-top: 4px;
   min-height: 48px;

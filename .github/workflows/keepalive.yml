@@ -1,0 +1,40 @@
+name: Keep services alive
+
+# Free-tier services pause or delete themselves when unused:
+#   - Qdrant Cloud: suspended after 1 week idle, deleted 4 weeks later
+#   - MongoDB Atlas: paused after 30 days without connections
+# This job wakes the Render services once a day and makes a real
+# database read on each, so nothing is ever paused or deleted.
+# If a check fails, GitHub emails the repository owner.
+
+on:
+  schedule:
+    - cron: "30 3 * * *" # every day at 03:30 UTC (09:00 IST)
+  workflow_dispatch: # also lets you run it by hand from the Actions tab
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      BACKEND_URL: https://policyresearch-ai-1.onrender.com
+      AI_SERVICE_URL: https://policyresearch-ai.onrender.com
+
+    steps:
+      - name: Wake both services
+        run: |
+          # Free Render services take about a minute to start; wake them together.
+          curl -s -o /dev/null --max-time 120 "$BACKEND_URL/api/health" &
+          curl -s -o /dev/null --max-time 120 "$AI_SERVICE_URL/health" &
+          wait
+
+      - name: Touch MongoDB (via backend)
+        run: |
+          curl -fsS --retry 6 --retry-delay 20 --retry-all-errors --max-time 90 \
+            "$BACKEND_URL/api/keepalive"
+
+      - name: Touch Qdrant (via AI service)
+        run: |
+          curl -fsS --retry 6 --retry-delay 20 --retry-all-errors --max-time 90 \
+            "$AI_SERVICE_URL/keepalive"

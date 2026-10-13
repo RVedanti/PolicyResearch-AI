@@ -5,6 +5,20 @@ export const API_URL =
   import.meta.env.VITE_API_URL ||
   "https://policyresearch-ai-1.onrender.com/api";
 
+export const AI_SERVICE_URL =
+  import.meta.env.VITE_AI_SERVICE_URL ||
+  "https://policyresearch-ai.onrender.com";
+
+// The backend and AI service run on free Render servers that sleep when
+// idle and take about a minute to start. Pinging both as soon as the page
+// opens lets them wake up while the visitor is still signing in.
+export function wakeServers() {
+  const ping = (url) =>
+    fetch(url, { mode: "no-cors", cache: "no-store" }).catch(() => {});
+  ping(`${API_URL}/health`);
+  ping(`${AI_SERVICE_URL}/health`);
+}
+
 export async function api(path, { method = "GET", body, form } = {}) {
   const token = localStorage.getItem("token");
   const headers = {};
@@ -21,11 +35,18 @@ export async function api(path, { method = "GET", body, form } = {}) {
     payload = JSON.stringify(body);
   }
 
-  const response = await fetch(`${API_URL}${path}`, {
-    method,
-    headers,
-    body: payload,
-  });
+  let response;
+  try {
+    response = await fetch(`${API_URL}${path}`, {
+      method,
+      headers,
+      body: payload,
+    });
+  } catch {
+    throw new Error(
+      "Couldn't reach the server. It may still be waking up — please try again in a few seconds."
+    );
+  }
 
   let data = {};
   try {

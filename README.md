@@ -12,7 +12,6 @@ PolicyResearch AI is a retrieval-augmented generation (RAG) research assistant. 
 | Documents | Sign in |
 |---|---|
 | ![Documents page](docs/screenshots/documents.png) | ![Login page](docs/screenshots/login.png) |
-
 | ![History page](docs/screenshots/history.png) | ![Saved answers](docs/screenshots/saved_ans.png) |
 
 ---
